@@ -6,4 +6,4 @@ The files includes the following creation packages:
 - repositories
 - views
 - layout
-- navigation >//note this directory is mainly for future uses as stated by the tutorial.
+- navigation "note this directory is mainly for future uses as stated by the tutorial."
