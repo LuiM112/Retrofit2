@@ -7,3 +7,6 @@ The files includes the following creation packages:
 - views
 - layout
 - navigation "note this directory is mainly for future uses as stated by the tutorial."
+
+
+###Adapters
