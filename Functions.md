@@ -9,4 +9,4 @@ The files includes the following creation packages:
 - navigation "note this directory is mainly for future uses as stated by the tutorial."
 
 
-###Adapters
+### Adapters
