@@ -6,9 +6,6 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-
-import com.example.myapplication.ApiKeys;
-
 import models.VolumesResponse;
 import repositories.BookRepository;
 
@@ -26,8 +23,7 @@ public class BookSearchViewModel extends AndroidViewModel {
     }
 
     public void searchVolumes(String keyword, String author) {
-        ApiKeys KEYS = new ApiKeys();
-        bookRepository.searchVolumes(keyword, author, KEYS.getKEY() );
+        bookRepository.searchVolumes(keyword, author);
     }
 
     public LiveData<VolumesResponse> getVolumesResponseLiveData() {

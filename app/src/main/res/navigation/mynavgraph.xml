@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/bookSearchFragment"
         android:name="views.BookSearchFragment"
-        android:label="fragment_booksearch"
+        android:label="fragment_book_search"
         tools:layout="@layout/fragment_booksearch" />
 </navigation>
