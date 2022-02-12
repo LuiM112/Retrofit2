@@ -7,7 +7,8 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
 
-import io.github.cdimascio.dotenv.Dotenv;
+import com.example.myapplication.ApiKeys;
+
 import models.VolumesResponse;
 import repositories.BookRepository;
 
@@ -25,8 +26,8 @@ public class BookSearchViewModel extends AndroidViewModel {
     }
 
     public void searchVolumes(String keyword, String author) {
-        Dotenv dotenv = Dotenv.configure().directory("/assets").filename("env").load();
-        bookRepository.searchVolumes(keyword, author, dotenv.get("GOOGLE_API_KEY"));
+        ApiKeys KEYS = new ApiKeys();
+        bookRepository.searchVolumes(keyword, author, KEYS.getKEY() );
     }
 
     public LiveData<VolumesResponse> getVolumesResponseLiveData() {
