@@ -1,6 +1,6 @@
 The files includes the following creation packages:
 
--Adapters
--models
--viewmodel
--views
+- Adapters
+- models
+- viewmodel
+- views
